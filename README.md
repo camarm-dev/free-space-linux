@@ -12,7 +12,12 @@ For the moment, these are cleaned:
 
 The script `clean/snaps.sh`, parse unused snaps to deleted them. The problem is that the word used for parsing is _`désactivé`_, a french word (because my snap is french).
 
-To resolves this, just edit `clean/snaps.sh`.
+To resolves this, just edit `clean/snaps.sh`:
+
+```diff
+- snap list --all | awk '/désactivé/{print $1, $3}' |
++ snap list --all | awk '/disabled/{print $1, $3}' |
+```
 
 ## Sctructure
 
