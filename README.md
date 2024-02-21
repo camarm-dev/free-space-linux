@@ -7,6 +7,7 @@ For the moment, these are cleaned:
 - Unused snaps
 - Cached thumbnails
 - System logs
+- Docker dandeling images
 
 ## Known issues
 
@@ -27,6 +28,7 @@ To resolves this, just edit `clean/snaps.sh`:
 	- `snaps.sh`; Snaps cleaner script
 	- `thumbnails.sh`; Thumbnails cleaning script
 	- `journal.sh`; Journal cleaning script
+	- `docker.sh`; Docker images prune script
 
 ## Contribute
 

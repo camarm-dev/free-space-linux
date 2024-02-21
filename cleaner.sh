@@ -27,7 +27,12 @@ if [ "$1" = --clean ]; then
 	read
 	bash clean/journal.sh
 fi
-
+echo "Docker images:"
+sudo du -sh /var/lib/docker
+if [ "$1" = --clean ]; then
+    read
+    bash clean/docker.sh
+fi
 after="$(df -k -h / | grep / | cut -d ' ' -f 17) / $(df -k -h / | grep / | cut -d ' ' -f 12)"
 
 echo "Disk usage;"
