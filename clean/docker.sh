@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "Removing docker images (confirm using 'y')..."
-docker image prune
+echo -e "Removing docker images (please confirm)...\n\n"
+docker image prune $1
+echo -e "\n\n"

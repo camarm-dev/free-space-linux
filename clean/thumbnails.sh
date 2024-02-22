@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Deleted cached thumbnails..."
-rm -rf ~/.cache/thumbnails/*
+echo -e "Deleting cached thumbnails...\n"
+rm -rf ~/.cache/thumbnails/* > /dev/null

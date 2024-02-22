@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Deleted logs (keeping 3days log)..."
-sudo journalctl --vacuum-time=3d
+echo -e "Deleting logs (keeping 3days log)... \n"
+sudo journalctl --vacuum-time=3d 2> /dev/null
