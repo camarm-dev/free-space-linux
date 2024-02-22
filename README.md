@@ -9,6 +9,16 @@ For the moment, these are cleaned:
 - System logs
 - Docker dandeling images
 
+## Getting started
+- Clone the repository
+```shell
+git clone https://github.com/camarm-dev/free-space-linux
+```
+- Execute `cleaner.sh`
+```shell
+bash cleaner.sh
+```
+
 ## Known issues
 
 The script `clean/snaps.sh`, parse unused snaps to deleted them. The problem is that the word used for parsing is _`désactivé`_, a french word (because my snap is french).
